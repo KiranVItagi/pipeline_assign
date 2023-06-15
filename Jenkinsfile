@@ -6,14 +6,19 @@ pipeline {
                 sh 'echo checkout step'
             }
         }
-        stage('testing') {
+        stage('testing1') {
             steps {
                 sh 'echo testing step'
             }
         }
-        stage('tesing2') {
+        stage('testing2') {
             steps {
                 sh 'echo testing2 step'
+            }
+        }
+        stage('deploy') {
+            steps {
+                sh 'echo deploy step'
             }
         }
     }
